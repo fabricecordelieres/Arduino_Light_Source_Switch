@@ -42,7 +42,7 @@
 
 ### Electronic design
 
-The electronic design is pretty simple. A [Fritzing scheme](Fritzing/Arduino-Light Source Switch.fzz) is enclosed in this repository:
+The electronic design is pretty simple. A [Fritzing scheme](../Fritzing/Arduino-Light Source Switch.fzz) is enclosed in this repository:
 
 ![Fritzing diagram](img/Arduino-Light_Source_Switch.png "Fritzing diagram")
 
@@ -63,7 +63,7 @@ Circuit assembly is straightforward. As depicted on the following diagram, the A
 
 
 ### 3D printed parts
-A [FreeCAD file](FreeCAD/Arduino-Light Source Switch.FCStd) and [STL files](STL/) are provided as part of this repository, allowing to print the enclosure for the circuit board, the support for the servo and the slider.
+A [FreeCAD file](../FreeCAD/Arduino-Light Source Switch.FCStd) and [STL files](../STL/) are provided as part of this repository, allowing to print the enclosure for the circuit board, the support for the servo and the slider.
 
 ![3D printed parts](img/Arduino-Light_Source_Switch_3D.png "3D printed parts")
 
@@ -79,11 +79,11 @@ For informational purposes, the time required to print part and the length of PL
 |**Total**|**13:15**|**20.85m**|**All**|
 
 ### Programming
-A [Arduino script](Arduino/Arduino-Light Source Switch.ino) is available form the repository. It basically handles the input from two sources:
+A [Arduino script](../Arduino/Arduino-Light Source Switch.ino) is available form the repository. It basically handles the input from two sources:
 * *From the button:* it switches the servo from the right to the left position and the reverse way round. The boolean variable "isRight" keeps track of the current position;
 * *From the serial input:* sending 64, 66, 68 or 70 will turn the servo to the right position; while sending 65, 67, 69 or 71 will turn it to the left position. This communication protocol emulates the behavior of a [Vincent Associates VMM-D3 Shutter Driver](https://www.uniblitz.com/products/vmm-d3-shutter-driver/). It therefore allows this device to be integrated and driven by softwares such as [Micro-Manager](https://micro-manager.org/).
 
 ### Setup/first tests
 From the first tests, two types of problems might arise:
 * *Right/left positions are not correct:* in such cases, adapt the [Arduino script](Arduino/Arduino-Light Source Switch.ino) by tweaking the ```rightPosition``` and ```leftPosition``` variables' values;
-* *Pressing once the button will make the slider move quickly right-left-right or left-right-right:* you should adapt the refractory period in the [Arduino script](Arduino/Arduino-Light Source Switch.ino) by modifying the ```timeout``` variable' value.
+* *Pressing once the button will make the slider move quickly right-left-right or left-right-right:* you should adapt the refractory period in the [Arduino script](../Arduino/Arduino-Light Source Switch.ino) by modifying the ```timeout``` variable' value.
