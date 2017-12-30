@@ -42,7 +42,7 @@
 
 ### Electronic design
 
-The electronic design is pretty simple. A [Fritzing scheme](Fritzing/Arduino-Light_Source_Switch.fzz) is enclosed in this repository:
+The electronic design is pretty simple. A [Fritzing scheme](FreeCAD/Arduino-Light_Source_Switch.FCStd) is enclosed in this repository:
 
 ![Fritzing diagram](img/Arduino-Light_Source_Switch.png "Fritzing diagram")
 
