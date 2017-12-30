@@ -9,7 +9,7 @@ int readValue=0; //Push button's status
 int inByte = 0; //Incoming serial byte
 int rightPosition=37; //Angle of the servo to push/pull the lever to the right
 int leftPosition=97; //Angle of the servo to push/pull the lever to the left
-int timeout=250; //Refractory period: won't answer in case an action is fired less than XXX msec fro mthe previous one
+int timeOut=250; //Refractory period: won't answer in case an action is fired less than XXX msec fro mthe previous one
 
 
 Servo myservo;
@@ -69,5 +69,5 @@ void changeSide(){
     digitalWrite(5, HIGH);
     myservo.write(leftPosition);
   }
-  delay(timeout);
+  delay(timeOut);
 }
