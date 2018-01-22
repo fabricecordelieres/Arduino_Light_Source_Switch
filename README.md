@@ -2,7 +2,7 @@
 
 *This repository contains all the informations about the design of an automated light source switch for microscopy.*
 
-Original idea, thinking and design: [Fabrice P . Cordelières](https://github.com/fabricecordelieres) and [Patrice Mascalchi](https://github.com/pmascalchi).
+Original idea, thinking and design: [Fabrice P. Cordelières](https://github.com/fabricecordelieres) and [Patrice Mascalchi](https://github.com/pmascalchi).
 
 Special trick used to make the Arduino controllable from MicroManager by mimicking a device's communication protocol inspired by [Jérôme Mutterer](https://github.com/mutterer)
 
