@@ -1,6 +1,7 @@
 # Arduino Light Source Switch
 
 *This repository contains all the informations about the design of an automated light source switch for microscopy.*
+Original ideas, thinking and design: [Fabrice P . Cordelières](https://github.com/fabricecordelieres) and [Patrice Mascalchi](https://github.com/pmascalchi).
 
 ## Required parts
 
